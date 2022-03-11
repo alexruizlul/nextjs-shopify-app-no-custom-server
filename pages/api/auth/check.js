@@ -5,7 +5,7 @@ import Shopify from "@shopify/shopify-api";
 export default async function (req, res) {
 
   //the bearer header is not posted, we can not use this: loadCurrentSession because it will not find the session.
-  // const session = await Shopify.Utils.loadCurrentSession(req, res, false); //false : online
+  // const session = await Shopify.Utils.loadCurrentSession(req, res, false); //false : offline
   // console.log("★ session is ", session);
 
   //ask the db directly
